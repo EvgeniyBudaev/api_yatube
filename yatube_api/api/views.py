@@ -4,7 +4,8 @@ from rest_framework.exceptions import PermissionDenied
 from rest_framework.permissions import IsAuthenticated
 
 from posts.models import Post, Group, User
-from .serializers import PostSerializer, UserSerializer, GroupSerializer, CommentSerializer
+from .serializers import PostSerializer, UserSerializer, GroupSerializer, \
+    CommentSerializer
 from .permissions import IsAuthorOrReadOnly
 
 
