@@ -3,8 +3,8 @@ from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 
 from posts.models import Post, Group, User
-from .serializers import PostSerializer, UserSerializer, GroupSerializer, \
-    CommentSerializer
+from .serializers import (PostSerializer, UserSerializer, GroupSerializer,
+                          CommentSerializer)
 from .permissions import IsAuthorOrReadOnly
 
 
